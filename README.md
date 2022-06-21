@@ -39,3 +39,60 @@ repository, which means it needs to be
 [installed](https://github.com/dijkstracula/prtsandbox#installation)
 there first (see link for instructions).  This of course will be changed
 once we have a remote artifactory to stick that .jar file.
+
+To build:
+
+```
+nathta@bcd0741cf59d pprojtest % mvn package
+[INFO] Scanning for projects...
+[INFO]
+[INFO] -----------------------< com.amazon.p:my-pproj >------------------------
+[INFO] Building my-pproj 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ my-pproj ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/nathta/code/pprojtest/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ my-pproj ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /Users/nathta/code/pprojtest/POutput/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ my-pproj ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/nathta/code/pprojtest/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ my-pproj ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ my-pproj ---
+[INFO] No tests to run.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ my-pproj ---
+[INFO] Building jar: /Users/nathta/code/pprojtest/POutput/my-pproj-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.638 s
+[INFO] Finished at: 2022-06-21T12:15:07-07:00
+[INFO] ------------------------------------------------------------------------
+nathta@bcd0741cf59d pprojtest % jar -tf POutput/my-pproj-1.0-SNAPSHOT.jar
+META-INF/
+META-INF/MANIFEST.MF
+PGenerated/
+PForeign/
+PForeign/globals/
+PGenerated/pprojtest.class
+PGenerated/pprojtest$PHalt.class
+PGenerated/pprojtest$DefaultEvent.class
+PGenerated/pprojtest$eIncr.class
+PGenerated/pprojtest$myMonitor.class
+PForeign/globals/Counter.class
+PForeign/myMonitor.class
+META-INF/maven/
+META-INF/maven/com.amazon.p/
+META-INF/maven/com.amazon.p/my-pproj/
+META-INF/maven/com.amazon.p/my-pproj/pom.xml
+META-INF/maven/com.amazon.p/my-pproj/pom.properties
+nathta@bcd0741cf59d pprojtest %
+```
