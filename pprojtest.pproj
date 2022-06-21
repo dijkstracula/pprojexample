@@ -1,0 +1,9 @@
+<!-- P project file for the Two Phase Commit example -->
+<Project>
+<ProjectName>pprojtest</ProjectName>
+<Target>Java</Target>
+<InputFiles>
+	<PFile>./PSpec/</PFile>
+</InputFiles>
+<OutputDir>./PGenerated/</OutputDir>
+</Project>
