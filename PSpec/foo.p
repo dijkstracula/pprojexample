@@ -1,26 +1,21 @@
-event eIncr;
+type UnboundedInt;
 
-// A global foreign type
-type Counter;
+event ev: int;
 
-spec myMonitor observes eIncr {
 
-  // Machine-local foreign functions that operate on a foreign type
-  fun NewCounter(): Counter;
-  fun GetNextCount(counter: Counter): int;
+spec Monitor observes ev {
+  var n : UnboundedInt;
 
-  var i : int;
-  var c : Counter;
+  fun NewUnboundedInt(): UnboundedInt;
+  fun BigIntAdd(n: UnboundedInt, i: int);
 
-  start state Init {
+  start state S {
     entry {
-      i = 0;
-      c = NewCounter();
+      n = NewUnboundedInt();
     }
 
-    on eIncr do {
-      i = i + 1;
-      assert i == GetNextCount(c), "uh oh";
+    on ev do (i: int) {
+      BigIntAdd(n, i);
     }
   }
 }

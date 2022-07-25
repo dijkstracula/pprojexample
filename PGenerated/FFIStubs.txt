@@ -1,0 +1,55 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% P <-> Java Foreign Function Interface Stubs
+% 
+% This file was auto-generated on Monday, 25 July 2022 at 14:03:23.  
+% 
+% Please separate each generated class into its own .java file (detailed throughout the file), filling
+% in the body of each function definition as necessary for your project's business logic.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Please place and complete the following class in PForeign/globals/UnboundedInt.java :
+
+package PForeign.globals;
+
+public class UnboundedInt implements prt.values.PValue<UnboundedInt> {
+    public UnboundedInt() { }
+    
+    public UnboundedInt deepClone() {
+        throw new RuntimeException("UnboundedInt#deepClone() not implemented yet!"); // TODO
+    }
+    
+    public boolean deepEquals(UnboundedInt other) {
+        throw new RuntimeException("UnboundedInt#deepEquals() not implemented yet!"); // TODO
+    }
+    
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Please place and complete the following class in PForeign/Monitor.java :
+
+package PForeign;
+
+import java.util.*;
+import PForeign.globals.UnboundedInt;
+
+public class Monitor {
+    public static UnboundedInt NewUnboundedInt(
+    ) {
+        return null; // TODO
+    }
+    
+    public static void BigIntAdd(
+        UnboundedInt n,
+        long i
+    ) {
+        return null; // TODO
+    }
+    
+}
+
