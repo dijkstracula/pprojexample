@@ -2,12 +2,13 @@ type UnboundedInt;
 
 event ev: int;
 
+fun NewUnboundedInt(): UnboundedInt;
+fun BigIntAdd(n: UnboundedInt, i: int);
 
 spec Monitor observes ev {
   var n : UnboundedInt;
 
-  fun NewUnboundedInt(): UnboundedInt;
-  fun BigIntAdd(n: UnboundedInt, i: int);
+  fun foo(i: int): bool;
 
   start state S {
     entry {

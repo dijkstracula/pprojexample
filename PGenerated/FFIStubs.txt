@@ -2,7 +2,7 @@
 % 
 % P <-> Java Foreign Function Interface Stubs
 % 
-% This file was auto-generated on Monday, 25 July 2022 at 14:03:23.  
+% This file was auto-generated on Tuesday, 26 July 2022 at 09:30:30.  
 % 
 % Please separate each generated class into its own .java file (detailed throughout the file), filling
 % in the body of each function definition as necessary for your project's business logic.
@@ -12,19 +12,55 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Please place and complete the following class in PForeign/globals/UnboundedInt.java :
+% Please place and complete the following class in PForeign/types/UnboundedInt.java :
 
-package PForeign.globals;
+package PForeign.types;
 
 public class UnboundedInt implements prt.values.PValue<UnboundedInt> {
     public UnboundedInt() { }
     
+    @Override
     public UnboundedInt deepClone() {
         throw new RuntimeException("UnboundedInt#deepClone() not implemented yet!"); // TODO
     }
     
+    @Override
     public boolean deepEquals(UnboundedInt other) {
         throw new RuntimeException("UnboundedInt#deepEquals() not implemented yet!"); // TODO
+    }
+    
+    @Override
+    public int hashCode() {
+        throw new RuntimeException("UnboundedInt#hashCode() not implemented yet!"); // TODO
+    }
+    
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UnboundedInt that = (UnboundedInt) o;
+        return deepEquals(that);
+    }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Please place and complete the following class in PForeign/P_TopScope.java :
+
+package PForeign;
+
+import PForeign.types.UnboundedInt;
+
+public class P_TopScope {
+    public static UnboundedInt NewUnboundedInt() {
+        return null; // TODO
+    }
+    
+    public static void BigIntAdd(
+        UnboundedInt n,
+        long i
+    ) {
+        // TODO
     }
     
 }
@@ -35,20 +71,12 @@ public class UnboundedInt implements prt.values.PValue<UnboundedInt> {
 
 package PForeign;
 
-import java.util.*;
-import PForeign.globals.UnboundedInt;
 
 public class Monitor {
-    public static UnboundedInt NewUnboundedInt(
-    ) {
-        return null; // TODO
-    }
-    
-    public static void BigIntAdd(
-        UnboundedInt n,
+    public static boolean foo(
         long i
     ) {
-        return null; // TODO
+        return false; // TODO
     }
     
 }
