@@ -2,7 +2,7 @@
 % 
 % P <-> Java Foreign Function Interface Stubs
 % 
-% This file was auto-generated on Tuesday, 26 July 2022 at 09:30:30.  
+% This file was auto-generated on Thursday, 28 July 2022 at 12:45:24.  
 % 
 % Please separate each generated class into its own .java file (detailed throughout the file), filling
 % in the body of each function definition as necessary for your project's business logic.
@@ -52,14 +52,15 @@ package PForeign;
 import PForeign.types.UnboundedInt;
 
 public class P_TopScope {
-    public static UnboundedInt NewUnboundedInt() {
+    public static UnboundedInt NewUnboundedInt(
+        prt.Monitor<? extends Enum<?>> machine) {
         return null; // TODO
     }
     
     public static void BigIntAdd(
+        prt.Monitor<? extends Enum<?>> machine,
         UnboundedInt n,
-        long i
-    ) {
+        long i) {
         // TODO
     }
     
@@ -74,8 +75,8 @@ package PForeign;
 
 public class Monitor {
     public static boolean foo(
-        long i
-    ) {
+        prt.Monitor<PGenerated.PMachines.Monitor.PrtStates> machine,
+        long i) {
         return false; // TODO
     }
     
