@@ -1,7 +1,7 @@
 package PGenerated;
 
 /***************************************************************************
- * This file was auto-generated on Thursday, 28 July 2022 at 12:45:24.  
+ * This file was auto-generated on Friday, 29 July 2022 at 09:21:46.
  * Please do not edit manually!
  **************************************************************************/
 
@@ -10,7 +10,7 @@ import java.util.*;
 import PForeign.types.UnboundedInt;
 
 public class PMachines {
-    public static class Monitor extends prt.Monitor {
+    public static class Monitor extends prt.Monitor<Monitor.PrtStates> {
         
         public static class Supplier implements java.util.function.Supplier<Monitor> {
             public Monitor get() {

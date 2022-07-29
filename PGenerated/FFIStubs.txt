@@ -2,7 +2,7 @@
 % 
 % P <-> Java Foreign Function Interface Stubs
 % 
-% This file was auto-generated on Thursday, 28 July 2022 at 12:45:24.  
+% This file was auto-generated on Friday, 29 July 2022 at 09:21:46.
 % 
 % Please separate each generated class into its own .java file (detailed throughout the file), filling
 % in the body of each function definition as necessary for your project's business logic.
@@ -75,7 +75,7 @@ package PForeign;
 
 public class Monitor {
     public static boolean foo(
-        prt.Monitor<PGenerated.PMachines.Monitor.PrtStates> machine,
+        PGenerated.PMachines.Monitor machine,
         long i) {
         return false; // TODO
     }
