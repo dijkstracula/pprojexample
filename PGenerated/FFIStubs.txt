@@ -2,7 +2,7 @@
 % 
 % P <-> Java Foreign Function Interface Stubs
 % 
-% This file was auto-generated on Friday, 29 July 2022 at 09:21:46.
+% This file was auto-generated on Friday, 29 July 2022 at 09:57:17.
 % 
 % Please separate each generated class into its own .java file (detailed throughout the file), filling
 % in the body of each function definition as necessary for your project's business logic.
@@ -49,18 +49,22 @@ public class UnboundedInt implements prt.values.PValue<UnboundedInt> {
 
 package PForeign;
 
+import prt.exceptions.*;
+import PGenerated.*;
 import PForeign.types.UnboundedInt;
 
 public class P_TopScope {
     public static UnboundedInt NewUnboundedInt(
-        prt.Monitor<? extends Enum<?>> machine) {
+        prt.Monitor<?> machine)
+     /* throws RaiseEventException, TransitionException */ {
         return null; // TODO
     }
     
     public static void BigIntAdd(
-        prt.Monitor<? extends Enum<?>> machine,
+        prt.Monitor<?> machine,
         UnboundedInt n,
-        long i) {
+        long i)
+     /* throws RaiseEventException, TransitionException */ {
         // TODO
     }
     
@@ -72,11 +76,15 @@ public class P_TopScope {
 
 package PForeign;
 
+import prt.exceptions.*;
+import PGenerated.*;
+import PGenerated.PMachines.Monitor.PrtStates;
 
 public class Monitor {
     public static boolean foo(
-        PGenerated.PMachines.Monitor machine,
-        long i) {
+        PMachines.Monitor machine,
+        long i)
+     /* throws RaiseEventException, TransitionException */ {
         return false; // TODO
     }
     

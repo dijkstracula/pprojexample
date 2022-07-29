@@ -1,20 +1,23 @@
 package PForeign;
 
+import prt.exceptions.*;
+import PGenerated.*;
 import PForeign.types.UnboundedInt;
 
 public class P_TopScope {
-
     public static UnboundedInt NewUnboundedInt(
-        prt.Monitor<? extends Enum<?>> machine) {
+            prt.Monitor<?> machine)
+        /* throws RaiseEventException, TransitionException */ {
         return null; // TODO
     }
-    
+
     public static void BigIntAdd(
-        prt.Monitor machine,
-        UnboundedInt n,
-        long i
-    ) {
-        machine.tryAssert(1 == 2, "uh oh");
+            prt.Monitor<?> machine,
+            UnboundedInt n,
+            long i)
+        /* throws RaiseEventException, TransitionException */ {
+        // TODO
     }
-    
+
 }
+
